@@ -7,6 +7,11 @@ public class Repaso1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		double radio;
+		
+		String radio2 = "314";
+		
+		radio = Double.parseDouble(radio2);
 	
 		
 		// EJERCICIO 1 - PRUEBAS CON SWING Y SCANNER
@@ -128,6 +133,61 @@ public class Repaso1 {
 		 
 		  */
 		
+		// EJERCICIO 3 - EJEMPLO MONTSE
+		
+        int x = 50,y = 8;
+        double n = 25.40 ,m= 5.85;
+        double[] numbers = new double[4];
+        numbers [0]= x;
+        numbers [1]= y;
+        numbers [2]= n;
+        numbers [3]= m;
+        char[] varibles = new char[4];
+        varibles [0]= 'X';
+        varibles [1]= 'Y';
+        varibles [2]= 'N';
+        varibles [3]= 'M';
+        // valor de cada variable
+        System.out.println("El valor de las variables son: ");
+        for(int i=0; i < numbers.length; i ++){
+            System.out.println(varibles [i] + " = " + numbers [i]);}
+
+        // suma, resta, multiplicación, división y resto de X+Y, N+M
+        System.out.println("Las poeraciones básicas de las variablñes son: ");
+        for(int i=0; i < numbers.length; i ++ ){
+            System.out.println(varibles [i] + " + " + varibles [i+1] + " = " + (numbers [i])+(numbers [i+1]) );
+            System.out.println(varibles [i] + " - " + varibles [i+1] + " = " + (numbers [i]- numbers [i+1]) );
+            System.out.println(varibles [i] + " * " + varibles [i+1] + " = " + (numbers [i])*(numbers [i+1]) );
+            System.out.println(varibles [i] + " / " + varibles [i+1] + " = " + (numbers [i])/(numbers [i+1]) );
+            System.out.println(varibles [i] + " % " + varibles [i+1] + " = " + (numbers [i])%(numbers [i+1]) );
+            i++;
+        }
+        // La suma X + N, El cociente Y/M, El resto Y%M
+        for(int i=0; i < numbers.length; i ++){
+            if(i==0){
+               System.out.println(varibles [i] + " + " + varibles [i+3] + " = " + (numbers [i])+(numbers [i+3]) );}
+            if(i==1){
+                System.out.println(varibles [i] + " / " + varibles [i+2] + " = " + (numbers [i])/(numbers [i+2]) );
+                System.out.println(varibles [i] + " % " + varibles [i+2] + " = " + (numbers [i])%(numbers [i+2]) );}
+            }
+
+        // el doble de cada variable
+        System.out.println("El doble de cada variables es: ");
+        for(int i=0; i < numbers.length; i ++){
+            System.out.println(varibles [i] + " = " + numbers [i]*2 );}
+
+         // la suma de todas las variables es:
+        double sumaTotal = 0.00;
+        for(int i=0; i < numbers.length; i ++){
+            sumaTotal += numbers [i];}
+        System.out.println("La suma de todas las variables es: " + sumaTotal);
+
+         // el producto de todas las variables es:
+        double productoTotal = 1.00;
+        for(int i=0; i < numbers.length; i ++){
+            productoTotal *= numbers [i];}
+        System.out.println("El producto de todas las variables es: " + productoTotal);
+		
 		// EJERCICIO 4 - EJEMPLO POL
 		/*
 		
@@ -151,7 +211,7 @@ public class Repaso1 {
         int AB = 77;
         int AC = 6;
         int AD = 10;
-    
+   
         AB = AC;
         AC = AA;
         AA = AD;
@@ -175,9 +235,10 @@ public class Repaso1 {
 
 	*/ 
 		
-		// EJERCICIO 5 - EJEMPLO CARLOS - VARIABLE AUXILIAR PARA NO PERDER NINGUN VALOR
+		// EJERCICIO 5 - EJEMPLO CARLOS - VARIABLE AUXILIAR PARA NO PERDER NINGUN VALOR 
+		/* 
 		
-		int AA,BB,CC,DD,swap;
+		int AA,BB,CC,DD,auxiliar;
 
 		AA = 2;
 		BB = 4;
@@ -188,13 +249,14 @@ public class Repaso1 {
 		System.out.println("*** Ejercicio 5 ***");
 		System.out.println("AA, BB, CC, DD = " + AA + ", " + BB + ", "+ CC + ", " + DD);
 
-		swap = BB;
+		auxiliar = BB;
 		BB = CC;
 		CC = AA;
 		AA = DD;
 		DD = swap;
 
 		System.out.println("AA, BB, CC, DD = " + AA + ", " + BB + ", "+ CC + ", " + DD);
+		*/
 		
 	}
 
